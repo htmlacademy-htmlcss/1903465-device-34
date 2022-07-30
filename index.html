@@ -6,84 +6,77 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="header-logo">
         <img class="logo" src="images/logo-device.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
       </a>
-      <nav class="navigation">
-        <div class="navigation-user">
-          <form class="navigation-user-form" action="#" method="post">
-            <input class="form-field" type="search" placeholder="Текст поиска">
-            <button class="navigation-user-button">Найти</button>
-          </form>
-          <ul class="navigation-user-list">
-            <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-login" href="#">
-                <span class="navigation-user-text">Войти</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-compare" href="#">
-                <span class="navigation-user-text">Сравнить</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-backet" href="#">
-                <span class="basket-amount">2</span>
-                <span class="navigation-user-link navigation-user-text">Корзина</span>
-              </a>
-            </li>
-          </ul>
+      <div class="navigation-user">
+        <form class="navigation-search-form" action="#" method="post">
+          <input class="form-field" type="search" placeholder="Текст поиска">
+          <button class="form-button">Найти</button>
+        </form>
+        <div class="navigation-user-bar">
+          <a class="navigation-user-link navigation-user-login" href="#">Войти</a>
+          <a class="navigation-user-link navigation-user-compare" href="#">Сравнить</a>
+          <button class="navigation-user-link cart-button" type="button">
+            <span class="navigation-user-link navigation-user-text">Корзина</span>
+          </button>
+          <div class="cart-container"></div>
         </div>
-        <div class="navigation-wrapper">
-          <div class="navigation-catalog">
-            <a class="navigation-link" href="#">Каталог товаров</a>
-            <div class="navigation-subcatalog navigation-subcatalog-open">
-              <ul class="subcatalog-list">
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+      </div>
+      <nav class="navigation">
+        <div class="navigation-catalog">
+          <button class="navigation-link catalog-button catalog-button-open" type="button">
+            Каталог&nbsp;товаров
+            <span class="catalog-dropdown"></span>
+          </button>
+          <div class="navigation-submenu navigation-submenu-open">
+            <div class="submenu-catalog">
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Виртуальная реальность</a>
                 </li>
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="catalog.html">Моноподы для cелфи</a>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="catalog.html">Моноподы для cелфи</a>
                 </li>
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="subcatalog-list">
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Умные часы</a>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Экшн-камеры</a>
                 </li>
               </ul>
-              <ul class="subcatalog-list">
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="navigation-list-wrapper">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="navigation-list-wrapper">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Интернет-магазин Device.</h1>
-      <section class="promo-slider">
+      <section class="promo-slider container">
         <h2 class="visually-hidden">Промо-баннер.</h2>
         <div class="slider-wrapper">
           <ul class="slider-list">
@@ -93,7 +86,7 @@
               </div>
               <div class="slider-content-block">
                 <h3 class="title slider-content-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-                <p class="slider-content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную камеру.</p>
+                <p class="slider-content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную&nbsp;камеру.</p>
                 <a class="button slider-content-button" href="#">Подробнее</a>
                 <dl class="slider-advantages-list">
                   <div class="slider-advantages-item">
@@ -173,43 +166,37 @@
           </li>
         </ol>
       </section>
-      <section class="category">
+      <section class="product-type container">
         <h2 class="visually-hidden">Категории товаров.</h2>
-        <ul class="category-list">
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-image" src="images/category/glasses.svg" width="160" height="160" alt="Очки для виртуальной реальности.">
-              <h3 class="category-title">Виртуальная реальность</h3>
+        <ul class="product-type-list">
+          <li class="product-type-item">
+            <a class="product-type-link product-glasses" href="#">
+              <h3 class="product-type-text">Виртуальная реальность</h3>
             </a>
           </li>
-          <li class="category-item">
-            <a class="category-link" href="catalog.html">
-              <img class="category-image" src="images/category/stick.svg" width="160" height="160" alt=">Моноподы для селфи.">
-              <h3 class="category-title">Моноподы для селфи</h3>
+          <li class="product-type-item">
+            <a class="product-type-link product-monopod" href="catalog.html">
+              <h3 class="product-type-text">Моноподы для&nbsp;селфи</h3>
             </a>
           </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-image" src="images/category/camera.svg" width="160" height="160" alt="Экшн-камеры.">
-              <h3 class="category-title">Экшн-камеры</h3>
+          <li class="product-type-item">
+            <a class="product-type-link product-camera" href="#">
+              <h3 class="product-type-text">Экшн-камеры</h3>
             </a>
           </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-image" src="images/category/bracelet.svg" width="160" height="160" alt="Фитнес-браслеты.">
-              <h3 class="category-title">Фитнес-браслеты</h3>
+          <li class="product-type-item">
+            <a class="product-type-link product-braselet" href="#">
+              <h3 class="product-type-text">Фитнес-браслеты</h3>
             </a>
           </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-image" src="images/category/watch.svg" width="160" height="160" alt="Умные часы">
-              <h3 class="category-title">Умные часы</h3>
+          <li class="product-type-item">
+            <a class="product-type-link product-watch" href="#">
+              <h3 class="product-type-text">Умные часы</h3>
             </a>
           </li>
-          <li class="category-item">
-            <a class="category-link" href="#">
-              <img class="category-image" src="images/category/drone.svg" width="160" height="160" alt="Квадрокоптеры.">
-              <h3 class="category-title">Квадрокоптеры</h3>
+          <li class="product-type-item">
+            <a class="product-type-link product-drone" href="#">
+              <h3 class="product-type-text">Квадрокоптеры</h3>
             </a>
           </li>
         </ul>
