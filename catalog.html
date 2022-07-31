@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="header-logo" href="index.html">
         <img class="logo" src="images/logo-device.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
       </a>
@@ -36,36 +36,37 @@
       </div>
       <nav class="navigation">
         <div class="navigation-catalog">
-          <!-- <a class="navigation-link" href="#">Каталог товаров</a> -->
-          <button class="navigation-link catalog-button" type="button">
-            Каталог товаров
-            <!-- <span class="catalog-dropdown"></span> -->
+          <button class="navigation-link catalog-button catalog-button-open" type="button">
+            Каталог&nbsp;товаров
+            <span class="catalog-dropdown"></span>
           </button>
-          <div class="navigation-subcatalog navigation-subcatalog-open">
-            <ul class="subcatalog-list">
-              <li class="subcatalog-item">
-                <a class="subcatalog-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subcatalog-link" href="catalog.html">Моноподы для cелфи</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subcatalog-link" href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="subcatalog-list">
-              <li class="subcatalog-item">
-                <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="subcatalog-item">
-                <a class="subcatalog-link" href="#">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="subcatalog-list">
-              <li class="subcatalog-item">
-                <a class="subcatalog-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+          <div class="navigation-submenu navigation-submenu-open">
+            <div class="submenu-catalog">
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="catalog.html">Моноподы для cелфи</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="submenu-list">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="navigation-list-wrapper">
@@ -83,84 +84,6 @@
         </div>
       </nav>
     </header>
-    <!-- <header class="page-header">
-      <a class="header-logo">
-        <img class="logo" src="images/logo-device.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
-      </a>
-      <nav class="navigation">
-        <div class="navigation-user">
-          <form class="navigation-user-form" action="#" method="post">
-            <input class="form-field" type="search" placeholder="Текст поиска">
-            <button class="navigation-user-button">Найти</button>
-          </form>
-          <ul class="navigation-user-list">
-            <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-login navigation-user-accept" href="#">
-                <span class="navigation-user-text">Коля Петухов</span>
-              </a>
-              <a class="navigation-user-login navigation-user-login-exit" href="#">
-                <span class="navigation-user-text">Выйти</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-compare" href="#">
-                <span class="navigation-user-text">Сравнить</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-user-link navigation-user-backet" href="#">
-                <span class="basket-amount">2</span>
-                <span class="navigation-user-text">Корзина</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="navigation-wrapper">
-          <div class="navigation-catalog">
-            <a class="navigation-link" href="#">Каталог товаров</a>
-            <div class="navigation-subcatalog navigation-subcatalog-open">
-              <ul class="subcatalog-list">
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Моноподы для cелфи</a>
-                </li>
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul class="subcatalog-list">
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul class="subcatalog-list">
-                <li class="subcatalog-item">
-                  <a class="subcatalog-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="navigation-list-wrapper">
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header> -->
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="title inner-header-title">Моноподы для селфи</h1>
@@ -289,7 +212,7 @@
                 <li class="product-card-item">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="images/catalog/product-card/product-card-1.jpg" width="360" height="380" alt="Любительская селфи-палка.">
-                    <h3 class="product-card-title">Любительская селфи-палка</h3>
+                    <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
                     <span class="product-card-price">500 ₽</span>
                   </a>
                 </li>
@@ -303,14 +226,14 @@
                 <li class="product-card-item">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="images/catalog/product-card/product-card-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
-                    <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                    <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
                     <span class="product-card-price">2 500 ₽</span>
                   </a>
                 </li>
                 <li class="product-card-item">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="images/catalog/product-card/product-card-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной.»">
-                    <h3 class="product-card-title">Селфи-палка «Следуй за мной</h3>
+                    <h3 class="product-card-title">Селфи-палка «Следуй за&nbsp;мной</h3>
                     <span class="product-card-price">1 500 ₽</span>
                   </a>
                 </li>
@@ -343,8 +266,8 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-container">
-        <a class="footer-logo" href="index.html">
+      <div class="page-footer-container container">
+        <a class="footer-logo" href="#">
           <img class="logo" src="images/logo-footer.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
         </a>
         <section class="page-footer-contacts-wrapper">
@@ -362,7 +285,7 @@
             </li>
           </ul>
           <div class="footer-contacts-phone">
-            <a class="footer-phone-link" href="tel+78128121212">+7 (812) 812-12-12</a>
+            <a class="footer-phone-link" href="tel+78128121212">Тел.: +7 (812) 812-12-12</a>
           </div>
         </section>
         <section class="page-footer-social-wrapper">
