@@ -16,7 +16,9 @@
           <button class="form-button">Найти</button>
         </form>
         <div class="navigation-user-bar">
-          <a class="navigation-user-link navigation-user-login" href="#">Войти</a>
+          <div class="navigation-login-wrapper">
+            <a class="navigation-user-link navigation-user-login" href="#">Войти</a>
+          </div>
           <a class="navigation-user-link navigation-user-compare" href="#">Сравнить</a>
           <button class="navigation-user-link cart-button" type="button">
             <span class="navigation-user-link navigation-user-text">Корзина</span>
@@ -30,7 +32,7 @@
             Каталог&nbsp;товаров
             <span class="catalog-dropdown"></span>
           </button>
-          <div class="navigation-submenu navigation-submenu-open">
+          <div class="navigation-submenu">
             <div class="submenu-catalog">
               <ul class="submenu-list">
                 <li class="submenu-item">
@@ -80,10 +82,8 @@
         <h2 class="visually-hidden">Промо-баннер.</h2>
         <div class="slider-wrapper">
           <ul class="slider-list">
-            <li class="slider-item">
-              <div class="slider-image-block">
-                <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
-              </div>
+            <li class="slider-item is-active">
+              <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
               <div class="slider-content-block">
                 <h3 class="title slider-content-title">Порхает как бабочка,<br>жалит как пчела!</h3>
                 <p class="slider-content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную&nbsp;камеру.</p>
@@ -101,9 +101,7 @@
               </div>
             </li>
             <li class="slider-item">
-              <div class="slider-image-block">
-                <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
-              </div>
+              <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
               <div class="slider-content-block">
                 <h3 class="title slider-content-title">Худеем правильно!</h3>
                 <p class="slider-content-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -117,9 +115,7 @@
               </div>
             </li>
             <li class="slider-item">
-              <div class="slider-image-block">
-                <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
-              </div>
+              <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
               <div class="slider-content-block">
                 <h3 class="title slider-content-title">Делай селфи, как Бен Стиллер! </h3>
                 <p class="slider-content-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
@@ -150,7 +146,7 @@
         </button>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <button class="slider-pagination-button is-active" type="button">
               <span class="visually-hidden">Первый слайд.</span>
             </button>
           </li>
@@ -206,7 +202,7 @@
         <div class="services-wrapper container">
           <ul class="services-buttons-list">
             <li class="services-buttons-item">
-              <a class="button services-button services-button-current" href="#">Доставка</a>
+              <a class="button services-button is-active" href="#">Доставка</a>
             </li>
             <li class="services-buttons-item">
               <a class="button services-button" href="#">Гарантия</a>
@@ -216,22 +212,28 @@
             </li>
           </ul>
           <ul class="services-list">
-            <li class="services-item">
-              <h3 class="title services-title">Доставка</h3>
-              <p class="text services-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <li class="services-item is-active">
+              <div class="services-content services-delivery">
+                <h3 class="title services-title">Доставка</h3>
+                <p class="text services-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
             </li>
             <li class="services-item">
-              <h3 class="title services-title">Гарантия</h3>
-              <p class="text services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <div class="services-content services-guarantee">
+                <h3 class="title services-title">Гарантия</h3>
+                <p class="text services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </div>
             </li>
             <li class="services-item">
-              <h3 class="title services-title">Кредит</h3>
-              <p class="text services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <div class="services-content services-credit">
+                <h3 class="title services-title">Кредит</h3>
+                <p class="text services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="delivery">
+      <section class="delivery container">
         <h2 class="visually-hidden">Доставка.</h2>
         <a class="delivery-link" href="#">
           <span class="delivery-text">Доставим редкий товар под заказ</span>
@@ -336,5 +338,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

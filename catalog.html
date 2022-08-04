@@ -15,24 +15,17 @@
           <input class="form-field" type="search" placeholder="Текст поиска">
           <button class="form-button">Найти</button>
         </form>
-        <ul class="navigation-user-list">
-          <li class="navigation-item">
-            <a class="navigation-user-link navigation-user-login" href="#">
-              <span class="navigation-user-text">Войти</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-user-link navigation-user-compare" href="#">
-              <span class="navigation-user-text">Сравнить</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-user-link navigation-user-backet" href="#">
-              <span class="basket-amount">2</span>
-              <span class="navigation-user-link navigation-user-text">Корзина</span>
-            </a>
-          </li>
-        </ul>
+        <div class="navigation-user-bar">
+          <div class="navigation-login-wrapper">
+            <a class="navigation-user-link navigation-user-login" href="#">Коля Петухов</a>
+            <a class="navigation-user-link navigation-user-exit" href="#">Войти</a>
+          </div>
+          <a class="navigation-user-link navigation-user-compare" href="#">Сравнить</a>
+          <button class="navigation-user-link cart-button" type="button">
+            <span class="navigation-user-link navigation-user-text">Корзина</span>
+          </button>
+          <div class="cart-container"></div>
+        </div>
       </div>
       <nav class="navigation">
         <div class="navigation-catalog">
@@ -85,9 +78,9 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
+      <header class="inner-header container">
         <h1 class="title inner-header-title">Моноподы для селфи</h1>
-        <ol class="breadcrumbs">
+        <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -97,10 +90,10 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
-        </ol>
+        </ul>
       </header>
       <div class="catalog-wrapper">
-        <div class="catalog-container">
+        <div class="catalog container">
           <section class="inner-filter">
             <h2 class="filter-title">Фильтр:</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -198,10 +191,10 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="card-toggle">
-                <a class="button-sort button-down" href="#">
+                <a class="button-sort button-up" href="#">
                   <span class="visually-hidden">Вниз</span>
                 </a>
-                <a class="button-sort button-up" href="#">
+                <a class="button-sort button-down" href="#">
                   <span class="visually-hidden">Вверх</span>
                 </a>
               </div>
@@ -233,7 +226,7 @@
                 <li class="product-card-item">
                   <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="images/catalog/product-card/product-card-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной.»">
-                    <h3 class="product-card-title">Селфи-палка «Следуй за&nbsp;мной</h3>
+                    <h3 class="product-card-title">Селфи-палка «Следуй за&nbsp;мной»</h3>
                     <span class="product-card-price">1 500 ₽</span>
                   </a>
                 </li>
