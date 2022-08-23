@@ -55,11 +55,11 @@ sliderButtonPrev.addEventListener('click', (evt) => {
   sliderItems[index].classList.add('is-active');
 });
 
-const deliveryLink = document.querySelector('.delivery-link');
+const deliveryButton = document.querySelector('.delivery-button');
 const modalCloseButton = document.querySelector('.modal-close-button');
 const modal = document.querySelector('.modal-container');
 
-deliveryLink.addEventListener('click', (evt) => {
+deliveryButton.addEventListener('click', (evt) => {
   evt.preventDefault();
   modal.classList.add('is-open');
 });

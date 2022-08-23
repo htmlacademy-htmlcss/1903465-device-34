@@ -17,7 +17,7 @@
           <div class="form-field-wrapper">
             <input class="form-field" type="search" name="form-field" placeholder="Текст поиска">
           </div>
-          <button class="form-button" type="button">Найти</button>
+          <button class="form-button" type="submit">Найти</button>
         </form>
         <div class="navigation-user-bar">
           <div class="navigation-login-wrapper">
@@ -33,7 +33,7 @@
               <ul class="cart-list">
                 <li class="cart-item">
                   <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/catalog/product-card/product-card-1-small.jpg" width="39" height="43" alt="Селфи-палка со смартфоном.">
+                    <img class="cart-image" src="./images/catalog/product-card/product-card-small-1.jpg" width="39" height="43" alt="Селфи-палка со смартфоном.">
                     <span class="cart-image-title">Любительская селфи-палка</span>
                   </a>
                   <button class="delete-button" type="button">
@@ -42,7 +42,7 @@
                 </li>
                 <li class="cart-item">
                   <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/catalog/product-card/product-card-2-small.jpg" width="39" height="43" alt="Селфи-палка для профессионалов.">
+                    <img class="cart-image" src="./images/catalog/product-card/product-card-small-2.jpg" width="39" height="43" alt="Селфи-палка для профессионалов.">
                     <span class="cart-image-title">Профессиональная селфи-палка</span>
                   </a>
                   <button class="delete-button" type="button">
@@ -61,7 +61,7 @@
       </div>
       <nav class="navigation">
         <div class="navigation-catalog">
-          <button class="navigation-link catalog-button catalog-button-open" type="button">
+          <button class="catalog-button" type="button">
             Каталог&nbsp;товаров
             <span class="catalog-dropdown"></span>
           </button>
@@ -217,7 +217,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button catalog-filter-button" type="button">Показать</button>
+              <button class="button catalog-filter-button" type="submit">Показать</button>
             </form>
           </section>
           <div class="right-column-wrapper">
@@ -229,12 +229,12 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="card-toggle">
-                <a class="button-sort button-up" href="#">
+                <button class="button-sort button-up" type="button">
                   <span class="visually-hidden">Вниз.</span>
-                </a>
-                <a class="button-sort button-down" href="#">
+                </button>
+                <button class="button-sort button-down" type="button">
                   <span class="visually-hidden">Вверх.</span>
-                </a>
+                </button>
               </div>
             </div>
             <section class="product-card">
@@ -242,7 +242,7 @@
               <ul class="product-card-list">
                 <li class="product-card-item">
                   <!-- Добавить класс new-product к ссылке с классом product-card-link для отображения знака нового продукта -->
-                  <a class="product-card-link new-product" href="product.html">
+                  <a class="product-card-link" href="product.html">
                     <img class="product-card-image" src="images/catalog/product-card/product-card-1.jpg" width="360" height="380" alt="Любительская селфи-палка.">
                     <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
                     <span class="product-card-price">500 ₽</span>
@@ -321,7 +321,7 @@
             </li>
           </ul>
           <div class="footer-contacts-phone">
-            <a class="footer-phone-link" href="tel+78128121212">Тел.: +7 (812) 812-12-12</a>
+            <a class="footer-phone-link" href="tel+78128121212" aria-label="Контактный телефон.">Тел.: +7 (812) 812-12-12</a>
           </div>
         </section>
         <section class="page-footer-social-wrapper">

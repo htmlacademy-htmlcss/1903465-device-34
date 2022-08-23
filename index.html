@@ -9,15 +9,15 @@
   </head>
   <body>
     <header class="page-header container">
-      <a class="header-logo">
+      <span class="header-logo">
         <img class="logo" src="images/logo-device.svg" width="145" height="36" alt="Логотип интернет-магазина Device.">
-      </a>
+      </span>
       <div class="navigation-user">
         <form class="navigation-search-form" action="#" method="post">
           <div class="form-field-wrapper">
             <input class="form-field" type="search" name="form-field" placeholder="Текст поиска">
           </div>
-          <button class="form-button" type="button">Найти</button>
+          <button class="form-button" type="submit">Найти</button>
         </form>
         <div class="navigation-user-bar">
           <div class="navigation-login-wrapper">
@@ -32,7 +32,7 @@
               <ul class="cart-list">
                 <li class="cart-item">
                   <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/catalog/product-card/product-card-1-small.jpg" width="39" height="43" alt="Селфи-палка со смартфоном.">
+                    <img class="cart-image" src="./images/catalog/product-card/product-card-small-1.jpg" width="39" height="43" alt="Селфи-палка со смартфоном.">
                     <span class="cart-image-title">Любительская селфи-палка</span>
                   </a>
                   <button class="delete-button" type="button">
@@ -41,7 +41,7 @@
                 </li>
                 <li class="cart-item">
                   <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/catalog/product-card/product-card-2-small.jpg" width="39" height="43" alt="Селфи-палка для профессионалов.">
+                    <img class="cart-image" src="./images/catalog/product-card/product-card-small-2.jpg" width="39" height="43" alt="Селфи-палка для профессионалов.">
                     <span class="cart-image-title">Профессиональная селфи-палка</span>
                   </a>
                   <button class="delete-button" type="button">
@@ -60,7 +60,7 @@
       </div>
       <nav class="navigation">
         <div class="navigation-catalog">
-          <button class="navigation-link catalog-button catalog-button-open" type="button">
+          <button class="catalog-button" type="button">
             Каталог&nbsp;товаров
             <span class="catalog-dropdown"></span>
           </button>
@@ -271,8 +271,8 @@
         </div>
       </section>
       <section class="delivery container">
-        <h2 class="visually-hidden">Доставка.</h2>
-        <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
+        <h2 class="visually-hidden">Доставка под заказ.</h2>
+        <button class="delivery-button" type="button">Доставим редкий товар под заказ</button>
       </section>
       <section class="info container">
         <h2 class="visually-hidden">Информация о компании.</h2>
@@ -293,7 +293,7 @@
           <h4 class="contacts-subtitle">Интернет-магазин «Девайс»</h4>
           <address class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера&nbsp;П.</address>
           <div class="contacts-phone">
-            <a class="contacts-phone-link" href="tel+78128121212">+7 (812) 812-12-12</a>
+            <a class="contacts-phone-link" href="tel+78128121212" aria-label="Контактный телефон.">+7 (812) 812-12-12</a>
           </div>
           <h4 class="contacts-subtitle">Время работы</h4>
           <ul class="contacts-shedule-list">
@@ -312,11 +312,9 @@
           </div>
           <div class="subscribe-form-wrapper">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="subscribe-email">
-                <!-- При неправильном вводе email к input с классом subscribe-field добавить класс is-invalid -->
-                <input class="field subscribe-field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
-              </label>
-              <button class="button subscribe-button" type="submit">Подписаться</button>
+              <!-- При неправильном вводе email к input с классом subscribe-field добавить класс is-invalid -->
+              <input class="field subscribe-field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
+              <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
             <p class="text subscribe-form-text">Это бесплатно</p>
           </div>
@@ -343,7 +341,7 @@
             </li>
           </ul>
           <div class="footer-contacts-phone">
-            <a class="footer-phone-link" href="tel+78128121212">Тел.: +7 (812) 812-12-12</a>
+            <a class="footer-phone-link" href="tel+78128121212" aria-label="Контактный телефон.">Тел.: +7 (812) 812-12-12</a>
           </div>
         </section>
         <section class="page-footer-social-wrapper">
@@ -386,14 +384,14 @@
               <span class="order-form-text">Добавьте имя</span>
             </div>
             <div class="field-group email">
-              <label class="field-group-label" for="order-email">Ваш e-mail:</label>
+              <label class="field-group-label" for="user-email">Ваш e-mail:</label>
               <!-- Добавить класс is-invalid к <input> c классом field-email при неправильном заполнении поля ввода e-mail для показа сообщения -->
-              <input class="order-form-field field-email" type="email" id="order-email" name="order-email" placeholder="почта" required>
+              <input class="order-form-field field-email" type="email" id="user-email" name="order-email" value="почта" placeholder="почта" required>
               <span class="order-form-text order-form-text-error">Забавный у вас адрес</span>
             </div>
             <div class="field-group something">
-              <label class="field-group-label" for="order-email">Что нужно привезти:</label>
-              <input class="order-form-field" type="email" id="order-email" name="order-email" placeholder="В свободной форме" required>
+              <label class="field-group-label" for="order-product">Что нужно привезти:</label>
+              <input class="order-form-field" type="text" id="order-product" name="order-product" value="В свободной форме" placeholder="В свободной форме" required>
             </div>
             <div class="field-group amount">
               <div class="form-label-icon">
