@@ -603,7 +603,7 @@ body {
   align-items: center;
   width: 293px;
   padding: 0;
-  border: none;
+  border: 2px solid transparent;
   background-color: transparent;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -620,7 +620,7 @@ body {
   position: relative;
   width: 50px;
   height: 50px;
-  margin-left: 17px;
+  margin-left: 12px;
   border: 2px solid #000000;
   border-radius: 50%;
   opacity: 0.3;
@@ -657,8 +657,7 @@ body {
 }
 
 .catalog-button:focus {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
+  border: 2px solid #af4fff;
 }
 
 .navigation-catalog:focus-within .navigation-submenu {
@@ -743,7 +742,7 @@ body {
 }
 
 .slider-wrapper {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slider-list {
@@ -757,7 +756,7 @@ body {
   display: none;
   position: relative;
   width: 1160px;
-  background-image: linear-gradient(#ffe17f 112px, #ffffff 112px);
+  background-image: linear-gradient(#ffe17f 109px, #ffffff 109px);
 }
 
 .slider-item.is-active {
@@ -765,21 +764,21 @@ body {
 }
 
 .slider-image {
-  transform: translateY(-36px);
+  transform: translateY(-41px);
 }
 
 .slider-content-block {
   width: 600px;
-  padding-top: 86px;
+  padding-top: 42px;
   padding-left: 40px;
   padding-right: 12px;
-  transform: translateY(-36px);
+  /* transform: translateY(-36px); */
 }
 
 .slider-number {
   display: block;
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   padding: 0 37px 0 0;
   font-size: 180px;
   font-weight: 700;
@@ -1644,7 +1643,7 @@ body {
 }
 
 .footer-about-link:active .icon-logo-html {
-  color: rgb(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-about-link:focus {
@@ -2261,7 +2260,7 @@ body {
   width: 26px;
   height: 26px;
   border: 2px solid transparent;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .control:hover {
