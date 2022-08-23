@@ -790,6 +790,7 @@ body {
 .slider-content-button {
   width: 220px;
   margin-bottom: 49px;
+  z-index: 1;
 }
 
 .slider-advantages-list {
