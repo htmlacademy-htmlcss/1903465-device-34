@@ -755,6 +755,14 @@ body {
   display: flex;
 }
 
+.slider-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 560px;
+  min-height: 560px;
+}
+
 .slider-image {
   transform: translateY(-38px);
 }
@@ -789,7 +797,7 @@ body {
 
 .slider-content-button {
   width: 220px;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
   z-index: 1;
 }
 
@@ -800,12 +808,17 @@ body {
 }
 
 .slider-advantages-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-content: flex-start;
+  min-width: 100px;
+  max-width: 170px;
   margin-right: 20px;
   margin-bottom: 10px;
 }
 
 .slider-advantages-item dt {
-  margin-bottom: 12px;
   font-size: 36px;
 }
 
@@ -852,11 +865,12 @@ body {
 
 .slider-pagination {
   position: absolute;
-  right: 20px;
+  right: 40px;
   bottom: 207px;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+  max-width: 288px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -867,7 +881,7 @@ body {
   width: 12px;
   height: 12px;
   margin: 0;
-  margin-right: 20px;
+  margin-left: 20px;
   padding: 0;
   background-color: #ffffff;
   border: 2px solid #000000;
@@ -1237,15 +1251,15 @@ body {
 
 .about-us-item {
   position: relative;
-  margin-bottom: 19px;
-  padding-left: 38px;
+  margin-bottom: 18px;
+  padding-left: 36px;
 }
 
 .about-us-item::before {
   position: absolute;
   content: "";
-  top: 6px;
-  left: 3px;
+  top: 4px;
+  left: 2px;
   width: 8px;
   height: 8px;
   background-color: #ffc700;
@@ -1371,7 +1385,7 @@ body {
 .subscribe-button {
   width: 253px;
   padding: 14px 35px;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
@@ -2401,7 +2415,7 @@ body {
   background-color: inherit;
   border: 2px solid rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  font-family: "Raleway", "Arial", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 00.2em;

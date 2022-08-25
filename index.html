@@ -14,8 +14,9 @@
       </span>
       <div class="navigation-user">
         <form class="navigation-search-form" action="#" method="post">
+          <label class="visually-hidden" for="header-search">Поиск по сайту.</label>
           <div class="form-field-wrapper">
-            <input class="form-field" type="search" name="form-field" placeholder="Текст поиска">
+            <input class="form-field" type="search" name="form-field" id="header-search" placeholder="Текст поиска">
           </div>
           <button class="form-button" type="submit">Найти</button>
         </form>
@@ -32,7 +33,7 @@
               <ul class="cart-list">
                 <li class="cart-item">
                   <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/catalog/product-card/product-card-small-1.jpg" width="39" height="43" alt="Селфи-палка со смартфоном.">
+                    <img class="cart-image" src="images/catalog/product-card/product-card-small-1.jpg" width="39" height="43" alt="Селфи-палка со смартфоном.">
                     <span class="cart-image-title">Любительская селфи-палка</span>
                   </a>
                   <button class="delete-button" type="button">
@@ -41,7 +42,7 @@
                 </li>
                 <li class="cart-item">
                   <a class="cart-link" href="#">
-                    <img class="cart-image" src="./images/catalog/product-card/product-card-small-2.jpg" width="39" height="43" alt="Селфи-палка для профессионалов.">
+                    <img class="cart-image" src="images/catalog/product-card/product-card-small-2.jpg" width="39" height="43" alt="Селфи-палка для профессионалов.">
                     <span class="cart-image-title">Профессиональная селфи-палка</span>
                   </a>
                   <button class="delete-button" type="button">
@@ -117,11 +118,13 @@
         <div class="slider-wrapper">
           <ul class="slider-list">
             <li class="slider-item is-active">
-              <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер.">
+              </div>
               <div class="slider-content-block">
                 <span class="slider-number">01</span>
                 <h3 class="title slider-content-title">Порхает как бабочка,<br>жалит как пчела!</h3>
-                <p class="slider-content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную&nbsp;камеру.</p>
+                <p class="slider-content-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&nbsp;лазером, замаскированным под стандартную&nbsp;камеру.</p>
                 <a class="button slider-content-button" href="#">Подробнее</a>
                 <dl class="slider-advantages-list">
                   <div class="slider-advantages-item">
@@ -136,7 +139,9 @@
               </div>
             </li>
             <li class="slider-item">
-              <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет.">
+              </div>
               <div class="slider-content-block">
                 <span class="slider-number">01</span>
                 <h3 class="title slider-content-title">Худеем правильно!</h3>
@@ -151,7 +156,9 @@
               </div>
             </li>
             <li class="slider-item">
-              <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
+              <div class="slider-image-wrapper">
+                <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Палка для селфи.">
+              </div>
               <div class="slider-content-block">
                 <span class="slider-number">01</span>
                 <h3 class="title slider-content-title">Делай селфи, как Бен Стиллер! </h3>
@@ -252,7 +259,7 @@
             <li class="services-item is-active">
               <div class="services-content services-delivery">
                 <h3 class="title services-title">Доставка</h3>
-                <p class="text services-text">Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p class="text services-text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
             </li>
             <li class="services-item">
@@ -289,7 +296,7 @@
         </div>
         <div class="contacts">
           <h3 class="title contacts-title">Контакты</h3>
-          <p class="text contacts-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно&nbsp;сможете проверить работоспособность покупки.</p>
+          <p class="text contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно&nbsp;сможете проверить работоспособность покупки.</p>
           <h4 class="contacts-subtitle">Интернет-магазин «Девайс»</h4>
           <address class="contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера&nbsp;П.</address>
           <div class="contacts-phone">
@@ -308,10 +315,11 @@
           <h2 class="visually-hidden">Подписка на новости и спецпредложения.</h2>
           <div class="subscribe-text-wrapper">
             <h3 class="title subscribe-title">Подпишитесь на&nbsp;рассылку</h3>
-            <p class="text subscribe-text">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами, распаковками, а также акции, <br>спецпредложения и вот это вот всё.</p>
+            <p class="text subscribe-text">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscribe-form-wrapper">
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="subscribe-email"></label>
               <!-- При неправильном вводе email к input с классом subscribe-field добавить класс is-invalid -->
               <input class="field subscribe-field" type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" required>
               <button class="subscribe-button" type="submit">Подписаться</button>
@@ -386,12 +394,12 @@
             <div class="field-group email">
               <label class="field-group-label" for="user-email">Ваш e-mail:</label>
               <!-- Добавить класс is-invalid к <input> c классом field-email при неправильном заполнении поля ввода e-mail для показа сообщения -->
-              <input class="order-form-field field-email" type="email" id="user-email" name="order-email" value="почта" placeholder="почта" required>
+              <input class="order-form-field field-email" type="email" id="user-email" name="order-email" placeholder="Введите email" required>
               <span class="order-form-text order-form-text-error">Забавный у вас адрес</span>
             </div>
             <div class="field-group something">
               <label class="field-group-label" for="order-product">Что нужно привезти:</label>
-              <input class="order-form-field" type="text" id="order-product" name="order-product" value="В свободной форме" placeholder="В свободной форме" required>
+              <input class="order-form-field" type="text" id="order-product" name="order-product" placeholder="В свободной форме" required>
             </div>
             <div class="field-group amount">
               <div class="form-label-icon">
